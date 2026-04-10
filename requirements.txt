@@ -1,6 +1,6 @@
 fastapi
 uvicorn
 python-multipart
-whisper
+openai-whisper
 googletrans==4.0.0-rc1
 ffmpeg-python
