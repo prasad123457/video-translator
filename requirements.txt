@@ -1,4 +1,13 @@
-fastapi
+from fastapi import FastAPI
+import whisper
+
+app = FastAPI()
+
+model = whisper.load_model("tiny")
+
+@app.get("/")
+def home():
+    return {"message": "API is working"}fastapi
 uvicorn
 ffmpeg-python
 git+https://github.com/openai/whisper.git
